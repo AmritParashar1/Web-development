@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="400px" alt="no image">
+
+    <img src="./htm-1.png" width="400px" alt="no image">
+
+    <picture>
+        <source media="(min-width:650px )" srcset="./htm-1.png">
+        <source media="(min-width:400px )" srcset="./html-2.png">
+        <img src="./htm-1.png" alt="no image">
+    </picture>
+
+    <!-- an image map generator -->
+
+    <img src="html-1.png" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="366,261,257,174" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="172,441,135,377" shape="rect">
+</map>
+<script>
+    function one()
+    {
+        alert("You clicked on one")
+    }
+    function two()
+    {
+        alert("You clicked on two")
+    }
+</script>
+</body>
+</html>
