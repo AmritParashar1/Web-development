@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Selection</title>
+    <style>
+        #language-selection {
+            display: none;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+        #language-selection div {
+            width: 300px;
+            margin: 15% auto;
+            padding: 20px;
+            background: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="language-selection">
+        <div>
+            <h2>Select your language</h2>
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('fr')">French</button>
+            <button onclick="setLanguage('hi')">Hindi</button>
+            <!-- Add more languages as needed -->
+        </div>
+    </div>
+    <!-- Your website content goes here -->
+    <script>
+        window.onload = function() {
+            var language = localStorage.getItem('language');
+            if(!language) {
+                document.getElementById('language-selection').style.display = 'block';
+            }
+        }
+        function setLanguage(language) {
+            localStorage.setItem('language', language);
+            document.getElementById('language-selection').style.display = 'none';
+            // You can now reload the page or dynamically change the content based on the selected language
+        }
+    </script>
+</body>
+</html>

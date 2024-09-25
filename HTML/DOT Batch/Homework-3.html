@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <!-- Add Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://www.facebook.com">
+        <h1>Welcome to CodeHelp</h1>
+        <h2>Contact Us Form</h2>
+
+        <!-- Use form-group for better spacing and styling -->
+        <div class="form-group">
+            <label for="username">Name</label>
+            <input type="text" id="username" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="contactnumber">Contact Number</label>
+            <input type="number" id="contactnumber" placeholder="Enter your contact number">
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="dateofbirth">Date Of Birth</label>
+            <input type="date" id="dateofbirth">
+        </div>
+
+        <div class="form-group">
+            <label>Rating</label>
+            <!-- Use name="rating" for all radio buttons in the same group -->
+            <label><input type="radio" name="rating" value="1"> 1</label>
+            <label><input type="radio" name="rating" value="2"> 2</label>
+            <label><input type="radio" name="rating" value="3"> 3</label>
+        </div>
+
+        <div class="form-group">
+            <label for="enteryourmessage">Enter your message</label>
+            <textarea id="enteryourmessage" rows="4" placeholder="Enter your message"></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+</body>
+</html>

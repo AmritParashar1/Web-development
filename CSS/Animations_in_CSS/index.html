@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation ka gyaan</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .box
+        {
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            border: 3px solid black;
+            margin: 10px;
+            position:relative;
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+        }
+
+        .box2
+        {
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border-radius: 10px;
+            border: 3px solid black;
+            margin: 10px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            animation-name: leftmovement;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: linear;  
+
+        }
+
+        #circle
+        {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 3px solid yellow;
+            border-radius: 50px;
+            margin: 10px;
+            position: relative;
+            top: 30%;
+            left: 40%;
+            animation: 5s ease-in-out 0s infinite alternate-reverse none running circularmovement;
+
+        }
+
+        @keyframes circularmovement
+        {
+            0%
+            {
+                top: 1%;
+                left: 5%;
+            }
+
+            30%
+            {
+                top: 5%;
+                left: 90%;
+            }
+
+            60%
+            {
+                top: 70%;
+                left: 10%;
+            }
+
+            100%
+            {
+                top: 75%;
+                left: 90%;
+            }
+        }
+
+        @keyframes leftmovement
+        {
+            0%{
+                right: 0;
+            }
+
+            50%{
+                right : calc(100vw - 350px - 20px);
+            }
+
+            100%
+            {
+                right:0;
+            }
+        }
+
+        @keyframes rightmovement
+        {
+            0%{
+                left: 0;
+            }
+
+            50%{
+                left : calc(100vw - 350px - 20px);
+            }
+
+            100%
+            {
+                left:0;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box">
+
+        </div>
+
+        <div class="box2"></div>
+
+        <div id="circle"></div>
+
+    </div>
+</body>
+</html>

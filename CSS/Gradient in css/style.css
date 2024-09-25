@@ -1,0 +1,29 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    background-image: linear-gradient(red,blue);
+    background-image: linear-gradient(to right,red,blue);
+    background-image: linear-gradient(to left,red,blue);
+    background-image: linear-gradient(to bottom right,red,blue);
+    background-image: linear-gradient(to top right, orange,white,green);
+
+}
+
+.mydiv{
+    border: 1px solid black;
+    margin-top: 10px;
+    height: 200px;
+    width: 150px;
+    background-image: radial-gradient(red,blue,orange);
+
+
+}
+
+.dumdum{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    margin-top: 10px;
+    background-image: conic-gradient(red,blue,orange);
+}

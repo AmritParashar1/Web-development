@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container
+{
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+
+}
+
+.box
+{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation-name: circles;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: none;
+
+}
+
+@keyframes circles {
+    0% , 100%
+    {
+        transform: translate(0,0);
+    }
+    25%
+    {
+        transform: translate(200px,0);
+    }
+    50%
+    {
+        transform: translate(200px,200px);
+    }
+    75%
+    {
+        transform: translate(0,200px);
+    }
+
+    
+}
