@@ -72,6 +72,31 @@ topCities.pop();
 // console.log(hardCopyCities);
 // console.log(topCities);
 
+// Challenge 8: You have two arrays , merge the two arrays to create a third array
+
+let EuropeanCities = ["Paris","Rome"];
+let asianCities = ["Tokyo","Bangkok"];
+
+let worldCities = EuropeanCities.concat(asianCities);
+
+// console.log(worldCities);
+
+//Challenge 9: Find the length of an array and store it in the variable
+
+let teaMenu = ["Masala Chai","oolong tea","green tea","earl tea"];
+
+let menuLength = teaMenu.length;
+
+// console.log(menuLength);
+
+let cityBucketList = ["Kyoto","London","Capetown","Vancouver"];
+
+let isLondonInList = cityBucketList.includes("London");
+
+console.log(isLondonInList);
+
+
+
 
 
 
