@@ -89,6 +89,9 @@ let menuLength = teaMenu.length;
 
 // console.log(menuLength);
 
+
+//Challenge 10: Check if the london is their in the array and store the result in the isLondonInList variable
+
 let cityBucketList = ["Kyoto","London","Capetown","Vancouver"];
 
 let isLondonInList = cityBucketList.includes("London");
