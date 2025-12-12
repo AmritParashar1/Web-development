@@ -1,23 +1,41 @@
-/*Encapsulation
-Its a simple concept that restricts direct access to data objects.
-*/
+// /*Encapsulation
+// Its a simple concept that restricts direct access to data objects.
+// */
 
 
-class BankAccount{
+// class BankAccount{
 
+//     #balance = 0;
+
+//     deposite(amount){
+//         this.#balance += amount;
+//         return this.#balance;
+//     }
+
+//     getBalance(){
+//         return `$ ${this.#balance}`;
+//     }
+// }
+
+// let account = new BankAccount();
+// // console.log(account.getBalance());
+
+
+class BankAccount {
     #balance = 0;
 
-    deposite(amount){
+    deposite(amount) {
         this.#balance += amount;
         return this.#balance;
     }
 
-    getBalance(){
-        return `$ ${this.#balance}`;
+    getbalance() {
+        return `${this.#balance}`;
     }
 }
 
+
 let account = new BankAccount();
-// console.log(account.getBalance());
+account.deposite(1000);
 
-
+console.log(account.getbalance());

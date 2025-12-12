@@ -6,9 +6,9 @@ const username = {
 username.firstname = "Rohit";
 username.lastname = "Singh";
 
-// console.log(username.firstname);
-// console.log(username.lastname);
-// console.log(username);
+console.log(username.firstname);
+console.log(username.lastname);
+console.log(username);
 
 console.log(typeof username);
 

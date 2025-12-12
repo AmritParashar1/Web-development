@@ -11,7 +11,6 @@ Null
 
 Object
 Symbol
-
 */
 
 // Examples of datatypes

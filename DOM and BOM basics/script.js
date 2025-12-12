@@ -1,3 +1,4 @@
-console.log("Hello kio!");
-console.log(document.getElementsByTagName("h1"));
+console.log("hello king!!");
+console.log(window);
+
 
